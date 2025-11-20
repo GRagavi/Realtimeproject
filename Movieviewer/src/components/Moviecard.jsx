@@ -1,5 +1,6 @@
 import '../css/Moviecard.css'
 import { useMovieContext } from '../contexts/Moviecontext';
+
 function Moviecard({movie}){
     
     const {favourites, addToFavourites, removeFromFavouites, isFavourite} = useMovieContext();

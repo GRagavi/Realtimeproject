@@ -1,4 +1,4 @@
-import MovieCard from "../components/MovieCard";
+import Moviecard from "../components/Moviecard";
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css";
@@ -65,7 +65,7 @@ function Home() {
       ) : (
         <div className="movies-grid">
           {movies.map((movie) => (
-            <MovieCard movie={movie} key={movie.id} />
+            <Moviecard movie={movie} key={movie.id} />
           ))}
         </div>
       )}
