@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@200;300;400;500;600;700;800&display=swap");
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #4698b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    padding: 30px;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+.input-container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 2px 20px;
+    border: 2px solid azure;
+    border-radius: 9px;
+    box-shadow: 0 0 5px rgba(52, 49, 49, 0.2);
+    background-color: white;
+}
+
+.cityInput{
+    flex: 1;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+}
+.search-icon{
+    padding: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+.search-icon img{
+   object-fit: contain;
+   margin-top: 5px;
+   height: 20px;
+}
+
+.image{
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.image img{
+    width: 160px;
+    height: 160px;
+}
+.temperature, .location, .countryname{
+    text-align: center;
+    margin-top: 5px 0;
+    font-size: 35px;
+    text-transform: capitalize;
+    color: rgb(51, 51, 59);
+}
+.temperature{
+    font-weight: 600;
+}
+.location{
+    color: yellow;
+    font-size: 40px;
+    font-weight: 500;
+}
