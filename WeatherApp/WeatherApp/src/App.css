@@ -12,12 +12,14 @@ body{
 }
 
 .container{
-    width: 400px;
+    width: 450px;
+    height: 900px;
     padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     background-color: azure;
     border-radius: 8px;
 }
-
 .input-container{
     width: 90%;
     display: flex;
@@ -35,7 +37,7 @@ body{
     height: 30px;
     padding: 10px;
     outline: none;
-    font-size: 18px;
+    font-size: 20px;
     border: none;
 }
 .search-icon{
@@ -46,30 +48,11 @@ body{
 .search-icon img{
    object-fit: contain;
    margin-top: 5px;
-   height: 20px;
+   height: 30px;
 }
-
-.image{
+.error-message{
     text-align: center;
-    height: 150px;
-    margin-bottom: 10px;
-}
-.image img{
-    width: 160px;
-    height: 160px;
-}
-.temperature, .location, .countryname{
-    text-align: center;
-    margin-top: 5px 0;
-    font-size: 35px;
-    text-transform: capitalize;
-    color: rgb(51, 51, 59);
-}
-.temperature{
-    font-weight: 600;
-}
-.location{
-    color: yellow;
-    font-size: 40px;
-    font-weight: 500;
+    color: red;
+    font-size: 350%;
+    margin-top: 10px;
 }
