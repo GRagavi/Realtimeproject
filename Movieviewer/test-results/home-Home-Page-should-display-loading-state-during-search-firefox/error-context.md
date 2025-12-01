@@ -1,0 +1,239 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Movie App" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - generic [ref=e6]:
+      - link "Home" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - link "Favourites" [ref=e8] [cursor=pointer]:
+        - /url: /favourites
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - textbox "Search for movies..." [ref=e12]: inception
+        - button "Search" [active] [ref=e13] [cursor=pointer]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - img "Zootopia 2" [ref=e16]
+          - button "❤️" [ref=e18] [cursor=pointer]
+          - generic [ref=e19]:
+            - heading "Zootopia 2" [level=3] [ref=e20]
+            - paragraph [ref=e21]:
+              - strong [ref=e22]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e23]:
+              - strong [ref=e24]: "Rating:"
+              - text: /10
+        - generic [ref=e25]:
+          - img "The Shadow's Edge"
+          - button "❤️" [ref=e27] [cursor=pointer]
+          - generic [ref=e28]:
+            - heading "The Shadow's Edge" [level=3] [ref=e29]
+            - paragraph [ref=e30]:
+              - strong [ref=e31]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e32]:
+              - strong [ref=e33]: "Rating:"
+              - text: /10
+        - generic [ref=e34]:
+          - img "Bureau 749"
+          - button "❤️" [ref=e36] [cursor=pointer]
+          - generic [ref=e37]:
+            - heading "Bureau 749" [level=3] [ref=e38]
+            - paragraph [ref=e39]:
+              - strong [ref=e40]: "Release Year:"
+              - text: "2024"
+            - paragraph [ref=e41]:
+              - strong [ref=e42]: "Rating:"
+              - text: /10
+        - generic [ref=e43]:
+          - img "Altered"
+          - button "❤️" [ref=e45] [cursor=pointer]
+          - generic [ref=e46]:
+            - heading "Altered" [level=3] [ref=e47]
+            - paragraph [ref=e48]:
+              - strong [ref=e49]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e50]:
+              - strong [ref=e51]: "Rating:"
+              - text: /10
+        - generic [ref=e52]:
+          - img "The Family Plan 2"
+          - button "❤️" [ref=e54] [cursor=pointer]
+          - generic [ref=e55]:
+            - heading "The Family Plan 2" [level=3] [ref=e56]
+            - paragraph [ref=e57]:
+              - strong [ref=e58]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e59]:
+              - strong [ref=e60]: "Rating:"
+              - text: /10
+        - generic [ref=e61]:
+          - img "Wildcat"
+          - button "❤️" [ref=e63] [cursor=pointer]
+          - generic [ref=e64]:
+            - heading "Wildcat" [level=3] [ref=e65]
+            - paragraph [ref=e66]:
+              - strong [ref=e67]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e68]:
+              - strong [ref=e69]: "Rating:"
+              - text: /10
+        - generic [ref=e70]:
+          - 'img "Wicked: For Good"'
+          - button "❤️" [ref=e72] [cursor=pointer]
+          - generic [ref=e73]:
+            - 'heading "Wicked: For Good" [level=3] [ref=e74]'
+            - paragraph [ref=e75]:
+              - strong [ref=e76]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e77]:
+              - strong [ref=e78]: "Rating:"
+              - text: /10
+        - generic [ref=e79]:
+          - img "She Rides Shotgun"
+          - button "❤️" [ref=e81] [cursor=pointer]
+          - generic [ref=e82]:
+            - heading "She Rides Shotgun" [level=3] [ref=e83]
+            - paragraph [ref=e84]:
+              - strong [ref=e85]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e86]:
+              - strong [ref=e87]: "Rating:"
+              - text: /10
+        - generic [ref=e88]:
+          - img "High Forces"
+          - button "❤️" [ref=e90] [cursor=pointer]
+          - generic [ref=e91]:
+            - heading "High Forces" [level=3] [ref=e92]
+            - paragraph [ref=e93]:
+              - strong [ref=e94]: "Release Year:"
+              - text: "2024"
+            - paragraph [ref=e95]:
+              - strong [ref=e96]: "Rating:"
+              - text: /10
+        - generic [ref=e97]:
+          - 'img "Predator: Badlands"'
+          - button "❤️" [ref=e99] [cursor=pointer]
+          - generic [ref=e100]:
+            - 'heading "Predator: Badlands" [level=3] [ref=e101]'
+            - paragraph [ref=e102]:
+              - strong [ref=e103]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e104]:
+              - strong [ref=e105]: "Rating:"
+              - text: /10
+        - generic [ref=e106]:
+          - img "Dracula"
+          - button "❤️" [ref=e108] [cursor=pointer]
+          - generic [ref=e109]:
+            - heading "Dracula" [level=3] [ref=e110]
+            - paragraph [ref=e111]:
+              - strong [ref=e112]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e113]:
+              - strong [ref=e114]: "Rating:"
+              - text: /10
+        - generic [ref=e115]:
+          - img "Frankenstein"
+          - button "❤️" [ref=e117] [cursor=pointer]
+          - generic [ref=e118]:
+            - heading "Frankenstein" [level=3] [ref=e119]
+            - paragraph [ref=e120]:
+              - strong [ref=e121]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e122]:
+              - strong [ref=e123]: "Rating:"
+              - text: /10
+        - generic [ref=e124]:
+          - img "Border Hunters"
+          - button "❤️" [ref=e126] [cursor=pointer]
+          - generic [ref=e127]:
+            - heading "Border Hunters" [level=3] [ref=e128]
+            - paragraph [ref=e129]:
+              - strong [ref=e130]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e131]:
+              - strong [ref=e132]: "Rating:"
+              - text: /10
+        - generic [ref=e133]:
+          - img "Art of Eight Limbs"
+          - button "❤️" [ref=e135] [cursor=pointer]
+          - generic [ref=e136]:
+            - heading "Art of Eight Limbs" [level=3] [ref=e137]
+            - paragraph [ref=e138]:
+              - strong [ref=e139]: "Release Year:"
+              - text: "2024"
+            - paragraph [ref=e140]:
+              - strong [ref=e141]: "Rating:"
+              - text: /10
+        - generic [ref=e142]:
+          - img "War of the Worlds"
+          - button "❤️" [ref=e144] [cursor=pointer]
+          - generic [ref=e145]:
+            - heading "War of the Worlds" [level=3] [ref=e146]
+            - paragraph [ref=e147]:
+              - strong [ref=e148]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e149]:
+              - strong [ref=e150]: "Rating:"
+              - text: /10
+        - generic [ref=e151]:
+          - img "High Ground"
+          - button "❤️" [ref=e153] [cursor=pointer]
+          - generic [ref=e154]:
+            - heading "High Ground" [level=3] [ref=e155]
+            - paragraph [ref=e156]:
+              - strong [ref=e157]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e158]:
+              - strong [ref=e159]: "Rating:"
+              - text: /10
+        - generic [ref=e160]:
+          - img "A Legend"
+          - button "❤️" [ref=e162] [cursor=pointer]
+          - generic [ref=e163]:
+            - heading "A Legend" [level=3] [ref=e164]
+            - paragraph [ref=e165]:
+              - strong [ref=e166]: "Release Year:"
+              - text: "2024"
+            - paragraph [ref=e167]:
+              - strong [ref=e168]: "Rating:"
+              - text: /10
+        - generic [ref=e169]:
+          - 'img "JUJUTSU KAISEN: Execution -Shibuya Incident x The Culling Game Begins-"'
+          - button "❤️" [ref=e171] [cursor=pointer]
+          - generic [ref=e172]:
+            - 'heading "JUJUTSU KAISEN: Execution -Shibuya Incident x The Culling Game Begins-" [level=3] [ref=e173]'
+            - paragraph [ref=e174]:
+              - strong [ref=e175]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e176]:
+              - strong [ref=e177]: "Rating:"
+              - text: /10
+        - generic [ref=e178]:
+          - img "Bugonia"
+          - button "❤️" [ref=e180] [cursor=pointer]
+          - generic [ref=e181]:
+            - heading "Bugonia" [level=3] [ref=e182]
+            - paragraph [ref=e183]:
+              - strong [ref=e184]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e185]:
+              - strong [ref=e186]: "Rating:"
+              - text: /10
+        - generic [ref=e187]:
+          - img "One Battle After Another"
+          - button "❤️" [ref=e189] [cursor=pointer]
+          - generic [ref=e190]:
+            - heading "One Battle After Another" [level=3] [ref=e191]
+            - paragraph [ref=e192]:
+              - strong [ref=e193]: "Release Year:"
+              - text: "2025"
+            - paragraph [ref=e194]:
+              - strong [ref=e195]: "Rating:"
+              - text: /10
+```

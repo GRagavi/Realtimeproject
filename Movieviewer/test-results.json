@@ -1,0 +1,2051 @@
+{
+  "config": {
+    "configFile": "/Users/ragaviganesan/Realtimeproject/Movieviewer/playwright.config.js",
+    "rootDir": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 8,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:5173",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "favourites.spec.js",
+      "file": "favourites.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Favourites Page",
+          "file": "favourites.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display empty state when no favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3263,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.904Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-ecb0619dded4d2c096d4",
+              "file": "favourites.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "should display favourites when movies are added",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4178,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.884Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-07414ee03fcdebe4fdf2",
+              "file": "favourites.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should persist favourites after page reload",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 9351,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n\n    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js:60:54",
+                        "location": {
+                          "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                          "column": 54,
+                          "line": 60
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 58 |\u001b[39m     \n \u001b[90m 59 |\u001b[39m     \u001b[90m// Verify favourites persist\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${movieTitle}`\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'should remove movie from favourites page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                            "column": 54,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 58 |\u001b[39m     \n \u001b[90m 59 |\u001b[39m     \u001b[90m// Verify favourites persist\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${movieTitle}`\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'should remove movie from favourites page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js:60:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.892Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-ab318-avourites-after-page-reload-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-ab318-avourites-after-page-reload-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                        "column": 54,
+                        "line": 60
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-48cf82309f420c5ff990",
+              "file": "favourites.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should remove movie from favourites page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5565,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.885Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-035182fe841e7a58fdba",
+              "file": "favourites.spec.js",
+              "line": 63,
+              "column": 3
+            },
+            {
+              "title": "should display empty state when no favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11942,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:49.085Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-b2a4a25e87a3018586f0",
+              "file": "favourites.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "should display favourites when movies are added",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 14025,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:49.186Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-7d017b5a9230e6037d75",
+              "file": "favourites.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should persist favourites after page reload",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 20589,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n\n    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js:60:54",
+                        "location": {
+                          "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                          "column": 54,
+                          "line": 60
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 58 |\u001b[39m     \n \u001b[90m 59 |\u001b[39m     \u001b[90m// Verify favourites persist\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${movieTitle}`\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'should remove movie from favourites page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                            "column": 54,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 58 |\u001b[39m     \n \u001b[90m 59 |\u001b[39m     \u001b[90m// Verify favourites persist\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${movieTitle}`\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'should remove movie from favourites page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js:60:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:49.248Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-ab318-avourites-after-page-reload-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-ab318-avourites-after-page-reload-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                        "column": 54,
+                        "line": 60
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-75b23336ffdb14273285",
+              "file": "favourites.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should remove movie from favourites page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30124,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                            "column": 24,
+                            "line": 80
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.movie-card').first().locator('.favourite-btn')\u001b[22m\n\n\n\u001b[0m \u001b[90m 78 |\u001b[39m     \u001b[36mconst\u001b[39m favouriteCard \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.movie-card'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \u001b[36mconst\u001b[39m removeButton \u001b[33m=\u001b[39m favouriteCard\u001b[33m.\u001b[39mlocator(\u001b[32m'.favourite-btn'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m     \u001b[36mawait\u001b[39m removeButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m     \n \u001b[90m 82 |\u001b[39m     \u001b[90m// Verify empty state appears\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Please add your favourites here...'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js:80:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:49.615Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-5e212--movie-from-favourites-page-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-5e212--movie-from-favourites-page-firefox/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-ee6d0852ebd5910d68ff",
+              "file": "favourites.spec.js",
+              "line": 63,
+              "column": 3
+            },
+            {
+              "title": "should display empty state when no favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6248,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:24.326Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-ec72e3b4a46fe25fce1e",
+              "file": "favourites.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "should display favourites when movies are added",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 9485,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:25.154Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-377b4b9c85fef776e915",
+              "file": "favourites.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should persist favourites after page reload",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 14486,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n\n    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js:60:54",
+                        "location": {
+                          "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                          "column": 54,
+                          "line": 60
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 58 |\u001b[39m     \n \u001b[90m 59 |\u001b[39m     \u001b[90m// Verify favourites persist\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${movieTitle}`\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'should remove movie from favourites page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                            "column": 54,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Zootopia 2')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Zootopia 2')\u001b[22m\n\n\n\u001b[0m \u001b[90m 58 |\u001b[39m     \n \u001b[90m 59 |\u001b[39m     \u001b[90m// Verify favourites persist\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m`text=${movieTitle}`\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m   test(\u001b[32m'should remove movie from favourites page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js:60:54\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:25.311Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-ab318-avourites-after-page-reload-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/favourites-Favourites-Page-ab318-avourites-after-page-reload-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/favourites.spec.js",
+                        "column": 54,
+                        "line": 60
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-ec7e816dd2570b7fdbaa",
+              "file": "favourites.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "should remove movie from favourites page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 9598,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:25.398Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9d8f5e1dfc309cbea1ad-77eb6829450605873708",
+              "file": "favourites.spec.js",
+              "line": 63,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "home.spec.js",
+      "file": "home.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home Page",
+          "file": "home.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display the home page with navbar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 3779,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.839Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-afe474085407880775e2",
+              "file": "home.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should display search form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 3285,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.902Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-df87c1fa034f584d5033",
+              "file": "home.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should load popular movies on page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 3265,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.893Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-6ebc8434bc9640490ec1",
+              "file": "home.spec.js",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "should search for movies",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 4541,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:35.904Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-64b15b34aeb246c7d3ea",
+              "file": "home.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should display loading state during search",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 1425,
+                      "error": {
+                        "message": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n",
+                        "stack": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n\n    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js:56:16",
+                        "location": {
+                          "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                          "column": 16,
+                          "line": 56
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m loading \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Loading...'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Loading might appear briefly, so we check if it exists or if results appear\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.movies-grid, text=Loading...'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m   test(\u001b[32m'should handle empty search gracefully'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                            "column": 16,
+                            "line": 56
+                          },
+                          "message": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n\n\n\u001b[0m \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m loading \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Loading...'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Loading might appear briefly, so we check if it exists or if results appear\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.movies-grid, text=Loading...'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m   test(\u001b[32m'should handle empty search gracefully'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js:56:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:44.541Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/home-Home-Page-should-display-loading-state-during-search-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/home-Home-Page-should-display-loading-state-during-search-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                        "column": 16,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-dcb502fb4ba9ed602655",
+              "file": "home.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "should handle empty search gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1862,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:44.593Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-3bd9e17a0a569ff3069a",
+              "file": "home.spec.js",
+              "line": 59,
+              "column": 3
+            },
+            {
+              "title": "should display the home page with navbar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10561,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:49.728Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-f57f674f8d8ef6de6253",
+              "file": "home.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should display search form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 8177,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:49.837Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-ad09442d1bfef5819bae",
+              "file": "home.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should load popular movies on page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 12853,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:51.340Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-5e4d1e3a1bbdd63a08dc",
+              "file": "home.spec.js",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "should search for movies",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6772,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:51.957Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-6f734da37f241fbdba22",
+              "file": "home.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should display loading state during search",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 8653,
+                      "error": {
+                        "message": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n",
+                        "stack": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n\n    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js:56:16",
+                        "location": {
+                          "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                          "column": 16,
+                          "line": 56
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m loading \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Loading...'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Loading might appear briefly, so we check if it exists or if results appear\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.movies-grid, text=Loading...'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m   test(\u001b[32m'should handle empty search gracefully'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                            "column": 16,
+                            "line": 56
+                          },
+                          "message": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n\n\n\u001b[0m \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m loading \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Loading...'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Loading might appear briefly, so we check if it exists or if results appear\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.movies-grid, text=Loading...'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m   test(\u001b[32m'should handle empty search gracefully'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js:56:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:04.646Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/home-Home-Page-should-display-loading-state-during-search-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/home-Home-Page-should-display-loading-state-during-search-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                        "column": 16,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-ad2afaaf325b8c347660",
+              "file": "home.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "should handle empty search gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 8556,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:07.383Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-c56de3495e93bbef0936",
+              "file": "home.spec.js",
+              "line": 59,
+              "column": 3
+            },
+            {
+              "title": "should display the home page with navbar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6049,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:25.137Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-b2a50003599d4658d11e",
+              "file": "home.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should display search form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6024,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:25.745Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-b245970be934f2089dde",
+              "file": "home.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "should load popular movies on page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 9478,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:29.806Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-d260e3de9de430574210",
+              "file": "home.spec.js",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "should search for movies",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7530,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:36.532Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-5b7b57ac821bc312a54a",
+              "file": "home.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "should display loading state during search",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 4576,
+                      "error": {
+                        "message": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n",
+                        "stack": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n\n    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js:56:16",
+                        "location": {
+                          "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                          "column": 16,
+                          "line": 56
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m loading \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Loading...'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Loading might appear briefly, so we check if it exists or if results appear\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.movies-grid, text=Loading...'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m   test(\u001b[32m'should handle empty search gracefully'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                            "column": 16,
+                            "line": 56
+                          },
+                          "message": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \".movies-grid, text=Loading...\". Did you mean to CSS.escape it?\nCall log:\n\u001b[2m  - waiting for .movies-grid, text=Loading... to be visible\u001b[22m\n\n\n\u001b[0m \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m loading \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=Loading...'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m     \u001b[90m// Loading might appear briefly, so we check if it exists or if results appear\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 56 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'.movies-grid, text=Loading...'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 57 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m   test(\u001b[32m'should handle empty search gracefully'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js:56:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:49.236Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/home-Home-Page-should-display-loading-state-during-search-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/ragaviganesan/Realtimeproject/Movieviewer/test-results/home-Home-Page-should-display-loading-state-during-search-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/ragaviganesan/Realtimeproject/Movieviewer/tests/home.spec.js",
+                        "column": 16,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-e8eda90979ede6f29fd4",
+              "file": "home.spec.js",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "should handle empty search gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 5075,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:49.250Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-07361bb11aa628dabff4",
+              "file": "home.spec.js",
+              "line": 59,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "movie-card.spec.js",
+      "file": "movie-card.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Movie Card",
+          "file": "movie-card.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display movie information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 2480,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:44.658Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-5a206fe81959d4da1a20",
+              "file": "movie-card.spec.js",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "should have favourite button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2382,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:44.656Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-f1a0c199bf98983937e3",
+              "file": "movie-card.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "should add movie to favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 2507,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:45.237Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-0ebf2f208647b5354222",
+              "file": "movie-card.spec.js",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "should remove movie from favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2220,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:45.448Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-0ff9807f22b6f25d3dac",
+              "file": "movie-card.spec.js",
+              "line": 55,
+              "column": 3
+            },
+            {
+              "title": "should display movie information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6209,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:14.406Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-ed01ceca5440365f996e",
+              "file": "movie-card.spec.js",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "should have favourite button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4602,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:15.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-a7c22479f06d77915249",
+              "file": "movie-card.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "should add movie to favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 4677,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:15.810Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-a9072d1cb79f38a05d9e",
+              "file": "movie-card.spec.js",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "should remove movie from favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 4812,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:16.092Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-af9ec1cccf844ac345d9",
+              "file": "movie-card.spec.js",
+              "line": 55,
+              "column": 3
+            },
+            {
+              "title": "should display movie information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4632,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:49.468Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-81e63afacadcb56fc9ce",
+              "file": "movie-card.spec.js",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "should have favourite button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4681,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:50.764Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-e9d9a24e68823d1b457e",
+              "file": "movie-card.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "should add movie to favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3326,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:52.722Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-c32f8f27ca1588d60a25",
+              "file": "movie-card.spec.js",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "should remove movie from favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 3371,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:52.738Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a2e10abf430063742c5a-abb549c798e0b6b8e255",
+              "file": "movie-card.spec.js",
+              "line": 55,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "navigation.spec.js",
+      "file": "navigation.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Navigation",
+          "file": "navigation.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should navigate between Home and Favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 849,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:48.703Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ce7c070a851ea64285fd-b7982f0a61d770c16071",
+              "file": "navigation.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "should navigate using brand logo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 906,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:29:46.522Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ce7c070a851ea64285fd-5155d4308b947186735a",
+              "file": "navigation.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should navigate between Home and Favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 3255,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:17.487Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ce7c070a851ea64285fd-f38af3ffdf447ce00bc3",
+              "file": "navigation.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "should navigate using brand logo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3146,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:21.667Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ce7c070a851ea64285fd-69dc6cc2461c59d7cdb1",
+              "file": "navigation.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "should navigate between Home and Favourites",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2300,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:52.844Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ce7c070a851ea64285fd-f12fae3556218c0520fd",
+              "file": "navigation.spec.js",
+              "line": 4,
+              "column": 3
+            },
+            {
+              "title": "should navigate using brand logo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 2165,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-01T18:30:56.634Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ce7c070a851ea64285fd-d6f78ab03c3088329c2b",
+              "file": "navigation.spec.js",
+              "line": 22,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-01T18:29:31.107Z",
+    "duration": 88547.002,
+    "expected": 41,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}
