@@ -26,5 +26,4 @@ test.describe('Navigation', () => {
     // Click brand logo
     await page.locator('text=Movie App').click();
     await expect(page).toHaveURL(/\/$/);
-  });
-});
+  });});
