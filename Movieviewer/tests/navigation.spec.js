@@ -27,3 +27,4 @@ test.describe('Navigation', () => {
     await page.locator('text=Movie App').click();
     await expect(page).toHaveURL(/\/$/);
   });});
+

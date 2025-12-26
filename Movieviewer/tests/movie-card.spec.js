@@ -73,3 +73,7 @@ test.describe('Movie Card', () => {
     await expect(page.locator('text=Please add your favourites here...')).toBeVisible();
   });
 });
+
+
+
+

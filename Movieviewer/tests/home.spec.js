@@ -68,3 +68,7 @@ test.describe('Home Page', () => {
     await page.waitForSelector('.movies-grid', { timeout: 10000 });
   });
 });
+
+
+
+
