@@ -133,9 +133,9 @@ export const processPDF = async (documentId, filePath) => {
 export const getDocuments = async (req, res, next) => {
   try {
     // Assuming req.user.isAdmin is set for admin users
-    if (!req.user.isAdmin) {
-      return res.status(401).json({ success: false, message: 'Not authorized to view all documents' });
-    }
+    // if (!req.user.isAdmin) {
+    //   return res.status(401).json({ success: false, message: 'Not authorized to view all documents' });
+    // }
     const documents = await Document.find().sort({ uploadDate: -1 });
     res.status(200).json({ success: true, data: documents });
   } catch (error) {

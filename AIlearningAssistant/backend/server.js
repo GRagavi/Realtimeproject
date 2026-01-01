@@ -37,23 +37,18 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 //Routes
 app.use('/api/auth', authRoutes);
-//app.use('/api/user', userRoutes);
 app.use('/api/document', documentRoutes);
-app.use(errorHandler)
-// app.use('/api/auth', require('./routes/auth'));
-// app.use('/api/user', require('./routes/user'));
-// app.use('/api/document', require('./routes/document'));
-// app.use('/api/chat', require('./routes/chat'));
-// app.use('/api/admin', require('./routes/admin'));
-// app.use('/api/subscription', require('./routes/subscription'));
 
-// Error handling middleware
+// 404 handler for routes not found
 app.use((req,res)=>{
     res.status(404).json({
         success: false,
         error: 'Route not found',
         statuscode: 404});
 });
+
+// Error handling middleware (must be last)
+app.use(errorHandler);
 
 //start server
 const PORT = process.env.PORT || 5000;
